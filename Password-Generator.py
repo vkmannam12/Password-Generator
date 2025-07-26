@@ -9,6 +9,6 @@ def generate_password(length=12):
     password = ''.join(random.choice(all_chars) for _ in range(length))
     return password
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     length = int(input("Enter password length: "))
     print("Generated Password:", generate_password(length))
